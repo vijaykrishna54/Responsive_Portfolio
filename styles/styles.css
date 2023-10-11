@@ -1,0 +1,184 @@
+/* Colors Used
+#555
+#333 
+#e67e22 */
+
+/* Border Radius
+Default : 9px */
+
+/* Font Weight
+Medium : 500
+Semi : 600
+Semi-bold : 700
+Bold : 800 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/**************************/
+/*General Components*/
+/**************************/
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #e67e22;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: background-color 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+/**************************/
+/*Header*/
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /* To make it sticky */
+  height: 8.4rem;
+  padding: 0 4.8rem;
+}
+.logo {
+  height: 6.4rem;
+}
+
+/**************************/
+/*Navigation*/
+/**************************/
+.navigation-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.navigation-link:link,
+.navigation-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.navigation-link:hover,
+.navigation-link:active {
+  color: #cf711f;
+}
+
+/* To increase specifitcity and style to always apply */
+.navigation-link.nav-cta:link,
+.navigation-link.nav-cta:link:visited {
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #e67e22;
+}
+
+.navigation-link.nav-cta:hover,
+.navigation-link.nav-cta:link:active {
+  background-color: #cf711f;
+}
+/**************************/
+/*Hero Section*/
+/**************************/
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 6rem;
+  align-items: center;
+}
+
+.social-icons img {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-right: 1.4rem;
+  /* border: 1px solid #0a0a0a; */
+}
+.social-icons img:last-child {
+  margin: 0;
+}
+.hero-img {
+  width: 100%;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
